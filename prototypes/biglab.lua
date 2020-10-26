@@ -266,6 +266,10 @@ if (mods['FoodIndustry']) then
     table.insert(data.raw["lab"]["big-lab"].inputs, "food-science-pack")
 end
 
+if (mods['Factorio-Tiberium'] or mods['Factorio-Tiberium-Beta']) then
+    table.insert(data.raw["lab"]["big-lab"].inputs, "tiberium-science")
+end
+
 if DiscoScience and DiscoScience.prepareLab then
   DiscoScience.prepareLab(data.raw["lab"]["big-lab"])
 end
